@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="search-container">
+                <input type="text" class="search-bar" id="searchbar" onfocus="this.value=''"
+                    placeholder="Upisite ime grada...">
+                <input type="button" class="ok-button" id="dugme" value="prognoza">
+            </div>
+            <div class="middle-container">
+                <div class="left-middle-part">
+                    <div class="temperature">
+                        <h1 id="temperaturedegree" class="temperature-degree"></h1>
+                    </div>
+                    <h1 class="location-city" id="locationcity"></h1>
+                    <p class="local-time" id="localtime"></p>
+                </div>
+                <div class="right-middle-part">
+                    <p class="temperature-description" id="temperaturedescription"></p>
+                    <p class="wind-speed" id="windspeed"></p>
+                </div>
+            </div>
+            <div class="lower-container">
+                <div class="week-days" id="weekdays"></div>
+            </div>
+        </div>
+    </div>
+    <script src="jquery-3.3.1.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
